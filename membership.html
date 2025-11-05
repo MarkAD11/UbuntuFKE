@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership - Ubuntu Fraternity KE</title>
+  <meta name="description" content="Join Ubuntu Fraternity KE and become part of a brotherhood dedicated to preserving Kenyan values and building strong communities.">
+  <link rel="icon" type="image/jpeg" href="images/uflogo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav">
+    <div class="nav__container">
+      <a href="index.html" class="nav__logo">
+        <img src="images/uflogo.png" alt="Ubuntu Fraternity KE Logo">
+        Ubuntu Fraternity KE
+      </a>
+      
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <div class="nav__menu" id="navMenu">
+        <div class="nav__dropdown">
+          <button class="nav__dropdown-toggle" id="dropdownToggle" aria-expanded="false">
+            Menu
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="currentColor">
+              <path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown-menu" id="dropdownMenu">
+            <a href="index.html" class="nav__dropdown-item">Home</a>
+            <a href="about.html" class="nav__dropdown-item">About Us</a>
+            <a href="events.html" class="nav__dropdown-item">Events</a>
+            <a href="gallery.html" class="nav__dropdown-item">Gallery</a>
+            <a href="partnership.html" class="nav__dropdown-item">Partnership</a>
+            <a href="membership.html" class="nav__dropdown-item">Membership</a>
+            <a href="blogs.html" class="nav__dropdown-item">Blogs</a>
+            <a href="contact.html" class="nav__dropdown-item">Contact</a>
+            <a href="privacy.html" class="nav__dropdown-item">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Membership Section -->
+  <section class="section section--large">
+    <div class="container">
+      <h2 class="section__title">Become a Member</h2>
+      <p style="text-align: center; font-size: var(--text-xl); color: var(--text-secondary); max-width: 800px; margin: 0 auto var(--space-12);">
+        Join the Ubuntu Fraternity KE and be part of a movement that celebrates authentic Kenyan values and community spirit.
+      </p>
+      
+      <div class="membership-layout">
+        <!-- Registration Form -->
+        <div class="membership-form">
+          <h3 style="color: var(--primary-purple); margin-bottom: var(--space-6); font-size: var(--text-2xl);">Registration Form</h3>
+          <p style="color: var(--text-secondary); margin-bottom: var(--space-8); font-style: italic;">
+            A small facilitation fee applies to cover administrative costs and support our community programs.
+          </p>
+          
+          <form id="membershipForm">
+            <div class="form-group">
+              <label for="fullName" class="form-label">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" class="form-input" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="dateOfBirth" class="form-label">Date of Birth *</label>
+              <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber" class="form-label">Phone Number *</label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" class="form-input" required placeholder="e.g. +254728518687">
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com">
+            </div>
+            <div class="form-group">
+              <label for="paymentMethod" class="form-label">Preferred Payment Method *</label>
+              <select id="paymentMethod" name="paymentMethod" class="form-select" required>
+                <option value="">Select payment method</option>
+                <option value="mpesa">M-Pesa Paybill</option>
+                <option value="cash">Cash Payment</option>
+              </select>
+            </div>
+            <button type="submit" class="form-button">Register for Membership</button>
+          </form>
+        </div>
+        
+        <!-- Payment Information -->
+        <div class="payment-info">
+          <h3 class="payment-info__title">Payment Information</h3>
+          
+          <div class="payment-info__item">
+            <span class="payment-info__label">M-Pesa Paybill Number</span>
+            <span class="payment-info__value">123456</span>
+          </div>
+          
+          <div class="payment-info__item">
+            <span class="payment-info__label">Account Number</span>
+            <span class="payment-info__value">Ubuntu Fraternity</span>
+          </div>
+          
+          <div class="payment-info__item">
+            <span class="payment-info__label">Facilitation Fee</span>
+            <span class="payment-info__value">KES 500</span>
+          </div>
+          
+          <div class="payment-info__item">
+            <span class="payment-info__label">Bank Details</span>
+            <span class="payment-info__value">KCB Bank<br>Account: 1234567890<br>Name: Ubuntu Fraternity KE</span>
+          </div>
+          
+          <div style="margin-top: var(--space-6); padding: var(--space-4); background: rgba(255, 255, 255, 0.1); border-radius: var(--radius-lg);">
+            <p style="font-size: var(--text-sm); margin: 0; opacity: 0.9;">
+              <strong>Instructions:</strong><br>
+              1. Send KES 500 to Paybill 123456<br>
+              2. Account: Ubuntu Fraternity<br>
+              3. Reference: Your Full Name<br>
+              4. Screenshot the confirmation
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Membership Benefits -->
+      <div style="margin-top: var(--space-16);">
+        <h3 style="text-align: center; color: var(--primary-purple); margin-bottom: var(--space-8); font-size: var(--text-3xl);">Membership Benefits</h3>
+        <ul class="benefits-list">
+          <li>Exclusive access to member-only events and workshops</li>
+          <li>Leadership development and mentorship opportunities</li>
+          <li>Networking with like-minded brothers across Kenya</li>
+          <li>Early access to our content and publications</li>
+          <li>Voting rights in fraternity decisions</li>
+          <li>Official Ubuntu Fraternity KE membership certificate</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- M-Pesa PIN Modal -->
+  <div id="mpesaModal" class="modal">
+    <div class="modal-content">
+      <h3>Enter M-Pesa PIN</h3>
+      <p>Enter your 6-digit M-Pesa PIN to complete registration</p>
+      <input type="password" id="mpesaPin" class="pin-input" maxlength="6" placeholder="••••••" autocomplete="off">
+      <div class="modal-buttons">
+        <button class="modal-btn cancel-btn" onclick="closeMpesaModal()">Cancel</button>
+        <button class="modal-btn confirm-btn" onclick="submitMpesaPin()">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__content">
+      <p class="footer__text footer__text--highlight">&copy; 2025 Ubuntu Fraternity KE. All rights reserved.</p>
+      <p class="footer__text">📍 00100 Nairobi, Kenya</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
