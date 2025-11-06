@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubuntu Fraternity KE - Celebrating Brotherhood & Culture</title>
+  <meta name="description" content="Ubuntu Fraternity KE celebrates authentic Kenyan values, brotherhood, and community through storytelling and shared experiences.">
+  <meta name="keywords" content="Ubuntu, Fraternity, Kenya, Brotherhood, Culture, Community, Leadership">
+  <link rel="icon" type="image/jpeg" href="images/uflogo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav">
+    <div class="nav__container">
+      <a href="index.html" class="nav__logo">
+        <img src="images/uflogo.png" alt="Ubuntu Fraternity KE Logo">
+        Ubuntu Fraternity KE
+      </a>
+      
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <div class="nav__menu" id="navMenu">
+        <div class="nav__dropdown">
+          <button class="nav__dropdown-toggle" id="dropdownToggle" aria-expanded="false">
+            Menu
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="currentColor">
+              <path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav__dropdown-menu" id="dropdownMenu">
+            <a href="index.html" class="nav__dropdown-item">Home</a>
+            <a href="about.html" class="nav__dropdown-item">About Us</a>
+            <a href="events.html" class="nav__dropdown-item">Events</a>
+            <a href="gallery.html" class="nav__dropdown-item">Gallery</a>
+            <a href="partnership.html" class="nav__dropdown-item">Partnership</a>
+            <a href="membership.html" class="nav__dropdown-item">Membership</a>
+            <a href="blogs.html" class="nav__dropdown-item">Blogs</a>
+            <a href="contact.html" class="nav__dropdown-item">Contact</a>
+            <a href="privacy.html" class="nav__dropdown-item">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">Welcome to Ubuntu Fraternity KE</h1>
+      <p class="hero__subtitle">Celebrating community, fun activities, and charitable giving through authentic Kenyan storytelling and shared experiences.</p>
+      <a href="#about" class="hero__cta">Join us now!</a>
+    </div>
+  </section>
+
+  <!-- About & Member Tracker Section -->
+  <section id="about" class="section section--compact">
+    <div class="container">
+      <div class="homepage-grid">
+        <div class="card">
+          <h2 style="font-size: var(--text-3xl); color: var(--primary-purple); margin-bottom: var(--space-4); font-family: var(--font-display);">
+            About Our Club
+          </h2>
+          <p style="font-size: var(--text-lg); color: var(--text-secondary); margin-bottom: var(--space-6); line-height: var(--leading-relaxed);">
+            Ubuntu Fraternity KE is a vibrant club dedicated to fun activities, charitable giving, and community building. 
+            We believe in the power of ubuntu – "I am because we are" – and strive to create meaningful connections.
+          </p>
+          <a href="about.html" class="btn btn--primary">Read More About Us</a>
+        </div>
+        
+        <div class="card" style="background: linear-gradient(135deg, var(--primary-purple-muted), var(--accent-yellow-muted));">
+          <h3 style="font-size: var(--text-2xl); color: var(--primary-purple); margin-bottom: var(--space-4); font-family: var(--font-display);">
+            Our Community
+          </h3>
+          <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-4);">
+            <div style="font-size: var(--text-4xl); font-weight: var(--font-black); color: var(--primary-purple); font-family: var(--font-display);" 
+                 id="memberCount" data-count="128">0</div>
+            <div>
+              <div style="font-size: var(--text-lg); font-weight: var(--font-bold); color: var(--text-primary);">Active Members</div>
+              <div style="font-size: var(--text-sm); color: var(--text-muted);">and growing daily</div>
+            </div>
+          </div>
+          <p style="font-size: var(--text-base); color: var(--text-secondary);">
+            Join our community of passionate members committed to fun activities and charitable giving.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Committee & Gallery Section -->
+  <section class="section section--compact">
+    <div class="container">
+      <div class="homepage-grid">
+        <div>
+          <h2 class="section__title">Meet Our Leadership</h2>
+          <div class="committee-grid-compact">
+            <div class="committee-card-compact">
+              <div class="committee-avatar">👩‍💼</div>
+              <div>
+                <h4 class="committee-name">Nicole Adhiambo</h4>
+                <p class="committee-role">President</p>
+              </div>
+            </div>
+            
+            <div class="committee-card-compact">
+              <div class="committee-avatar">🤵‍♂️</div>
+              <div>
+                <h4 class="committee-name">Mark Odhiambo</h4>
+                <p class="committee-role">Vice President</p>
+              </div>
+            </div>
+            
+            <div class="committee-card-compact">
+              <div class="committee-avatar">🤵‍♀️</div>
+              <div>
+                <h4 class="committee-name">Tania Syonzue</h4>
+                <p class="committee-role">Secretary</p>
+              </div>
+            </div>
+            
+            <div class="committee-card-compact">
+              <div class="committee-avatar">👨‍💼</div>
+              <div>
+                <h4 class="committee-name">Maina Kamau</h4>
+                <p class="committee-role">Treasurer</p>
+              </div>
+            </div>
+            
+            <div class="committee-card-compact">
+              <div class="committee-avatar">🤵‍♂️</div>
+              <div>
+                <h4 class="committee-name">Michael Okongo</h4>
+                <p class="committee-role">Cultural Director</p>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: var(--space-6);">
+            <a href="about.html#team" class="btn btn--secondary">View Full Team</a>
+          </div>
+        </div>
+        
+        <div>
+          <h2 class="section__title">Our Community in Action</h2>
+          <div class="gallery-grid-compact">
+            <div class="gallery-item-compact">
+              <span>Image 1</span>
+            </div>
+            <div class="gallery-item-compact">
+              <span>Image 2</span>
+            </div>
+            <div class="gallery-item-compact">
+              <span>Image 3</span>
+            </div>
+            <div class="gallery-item-compact">
+              <span>Image 4</span>
+            </div>
+            <div class="gallery-item-compact">
+              <span>Image 5</span>
+            </div>
+            <div class="gallery-item-compact">
+              <span>Image 6</span>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: var(--space-6);">
+            <a href="gallery.html" class="btn btn--secondary">View Full Gallery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="section section--compact" style="background: linear-gradient(135deg, var(--primary-purple), var(--primary-purple-dark)); color: var(--white);">
+    <div class="container">
+      <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <h2 style="font-size: var(--text-4xl); margin-bottom: var(--space-4); font-family: var(--font-display);">
+          Ready to Join Our Club?
+        </h2>
+        <p style="font-size: var(--text-lg); margin-bottom: var(--space-6); opacity: 0.95;">
+          Become part of a community that enjoys fun activities, gives back through charity, 
+          and creates meaningful impact in our society.
+        </p>
+        <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+          <a href="membership.html" class="btn" style="background: var(--white); color: var(--primary-purple); text-decoration: none;">
+            Become a Member
+          </a>
+          <a href="contact.html" class="btn" style="background: transparent; border: 2px solid var(--white); color: var(--white); text-decoration: none;">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__content">
+      <p class="footer__text footer__text--highlight">&copy; 2025 Ubuntu Fraternity KE. All rights reserved.</p>
+      <p class="footer__text">📍 00100 Nairobi, Kenya</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
